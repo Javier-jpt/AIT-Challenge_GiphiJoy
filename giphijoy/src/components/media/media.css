@@ -19,3 +19,9 @@
   height: 150px;
   overflow: hidden;
 }
+
+.artists-container {
+  display: flex;
+  height: 200px;
+  overflow: hidden;
+}

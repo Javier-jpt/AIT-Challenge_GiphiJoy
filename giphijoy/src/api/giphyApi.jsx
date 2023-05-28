@@ -12,4 +12,14 @@ export const fetchTrendingGiphys = () => {
     baseURL: GIPHY_BASE_URL,
     params: DEFAULT_PARAMS,
   });
-}
+};
+
+export const fetchSearchedGiphys = (query) => {
+  return api.get("search", {
+    baseURL: GIPHY_BASE_URL,
+    params: {
+      ...DEFAULT_PARAMS,
+      q: query,
+    },
+  });
+};
