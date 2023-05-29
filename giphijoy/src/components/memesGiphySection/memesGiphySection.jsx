@@ -1,7 +1,7 @@
 import React from "react";
-import "./storiesGiphySection.css";
+import "./memesGiphySection.css";
 
-const StoriesGiphySection = ({ giphysArray }) => {
+const MemesGiphySection = ({ giphysArray }) => {
   const getGiphy = () => {
     let randomIndex = Math.floor(Math.random() * 30);
     let randomGiphy = giphysArray[randomIndex];
@@ -54,4 +54,4 @@ const StoriesGiphySection = ({ giphysArray }) => {
   )
 };
 
-export default StoriesGiphySection;
+export default MemesGiphySection;

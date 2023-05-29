@@ -1,7 +1,7 @@
 import React from 'react'
-import './artistGiphy.css'
+import './psychedelicGiphy.css'
 
-function ArtistGiphy({ giphy }) {
+function PsychedelicGiphy({ giphy }) {
   return (
     <div className='artist-giphy'>
       <img src={giphy.images.downsized.url} alt={giphy.title} />
@@ -9,4 +9,4 @@ function ArtistGiphy({ giphy }) {
   )
 }
 
-export default ArtistGiphy;
+export default PsychedelicGiphy;

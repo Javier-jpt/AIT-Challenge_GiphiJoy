@@ -3,10 +3,9 @@
   justify-content: center;
   align-items: center;
   height: 150px;
-  width: 400px;
-  margin-left: 400px;
-  border: 5px solid goldenrod;
+  width: 300px;
   margin-top: 10px;
+  margin-right: 20px;
 }
 
 .logo-web span {
@@ -15,7 +14,7 @@
 }
 
 
-/* .header {
+.header {
   display: flex;
   align-items: center;
 }
@@ -40,6 +39,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 3px;
+  cursor: pointer;
 }
 
 .profile {
@@ -59,6 +59,7 @@
   display: flex;
   align-items: flex-start;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .reactions {
@@ -115,5 +116,5 @@
 
 .hover-moreverticon:hover {
   background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-} */
+} 
 

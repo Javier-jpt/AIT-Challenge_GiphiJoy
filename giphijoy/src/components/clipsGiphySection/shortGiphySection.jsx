@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./clipsGiphySection.css";
+import "./shortGiphySection.css";
 
-const ClipsGiphySection = ({ giphysArray }) => {
+const ShortGiphySection = ({ giphysArray }) => {
   const [giphys, setGiphys] = useState([]);
 
   const randomizeData = (giphysArray) => {
@@ -42,4 +42,4 @@ const ClipsGiphySection = ({ giphysArray }) => {
   );
 }
 
-export default ClipsGiphySection;
+export default ShortGiphySection;
