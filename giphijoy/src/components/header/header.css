@@ -1,4 +1,21 @@
-.header {
+.logo-web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 400px;
+  margin-left: 400px;
+  border: 5px solid goldenrod;
+  margin-top: 10px;
+}
+
+.logo-web span {
+  color: goldenrod;
+  font-size: 70px;
+}
+
+
+/* .header {
   display: flex;
   align-items: center;
 }
@@ -98,5 +115,5 @@
 
 .hover-moreverticon:hover {
   background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
+} */
 

@@ -5,11 +5,13 @@ import giphyArtists from "../../artists";
 import TrendingGiphy from "../trendingGiphy/trendingGiphy";
 import ArtistGiphy from "../artistGiphy/artistGiphy";
 import ClipsGiphySection from "../clipsGiphySection/clipsGiphySection";
+import StoriesGiphySection from "../storiesGiphySection/storiesGiphySection";
 
 const Media = () => {
   const [trending, setTrending] = useState([]);
   const [artists, setArtists] = useState([]);
   const [clips, setClips] = useState([]);
+  const [stories, setStories] = useState ([]);
 
 
   const randomizeData = (content) => {
@@ -38,7 +40,8 @@ const Media = () => {
   useEffect(() => {
     getTrendingGiphys();
     getArtists();
-    getSearchedGiphys("coffee", setClips)
+    getSearchedGiphys("coffee", setClips);
+    getSearchedGiphys("pose", setStories)
   }, []);
 
 console.log(clips, 'clips');
@@ -48,7 +51,7 @@ console.log(clips, 'clips');
       <div className="row">
         <div className="row-header">
           <img src="/image/trending.svg" alt="Trending" />
-          <h1>Trending</h1>
+          <h1>Trending GiF</h1>
         </div>
         <div className="trending-container">
           {trending?.map((trendingGiphy, index) => {
@@ -59,7 +62,7 @@ console.log(clips, 'clips');
       <div className="row">
         <div className="row-header">
           <img src="/image/artists.svg" alt="Artists" />
-          <h1>Artists</h1>
+          <h1>Psychedelic GiF</h1>
         </div>
         <div className="artists-container">
           {artists.map((artistGiphy, index) => {
@@ -70,7 +73,7 @@ console.log(clips, 'clips');
       <div className="row">
         <div className="row-header">
           <img src="/image/clips.svg" alt="Clips" />
-          <h1>Clips</h1>
+          <h1>Short GiF</h1>
         </div>
         <div className="clips-container">
           <ClipsGiphySection giphysArray={clips} />
@@ -79,10 +82,10 @@ console.log(clips, 'clips');
       <div className="row">
         <div className="row-header">
           <img src="/image/stories.svg" alt="Stories" />
-          <h1>Stories</h1>
+          <h1>Memes GiF</h1>
         </div>
         <div className="stories-container">
-          <p>Content</p>
+          <StoriesGiphySection giphysArray={stories} />
         </div>
       </div>
     </div>
