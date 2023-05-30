@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-import "./media.css";
+import "./home.css";
 import { fetchSearchedGiphys, fetchTrendingGiphys } from "../../api/giphyApi";
 import giphyArtists from "../../artists";
 import TrendingGiphy from "../trendingGiphy/trendingGiphy";
 import PsychedelicGiphy from "../psychedelicGiphy/psychedelicGiphy";
-import ShortGiphySection from "../clipsGiphySection/shortGiphySection";
+import ShortGiphySection from "../shortGiphySection/shortGiphySection";
 import MemesGiphySection from "../memesGiphySection/memesGiphySection";
+
 
 const Media = () => {
   const [trending, setTrending] = useState([]);
   const [artists, setArtists] = useState([]);
   const [clips, setClips] = useState([]);
-  const [stories, setStories] = useState ([]);
-
+  const [stories, setStories] = useState([]);
 
   const randomizeData = (content) => {
     return content.data.sort(() => Math.random() - 0.5);
@@ -35,13 +35,13 @@ const Media = () => {
   const getSearchedGiphys = async (query, setState) => {
     const searched = await fetchSearchedGiphys(query);
     setState(randomizeData(searched.data));
-  }
+  };
 
   useEffect(() => {
     getTrendingGiphys();
     getArtists();
     getSearchedGiphys("coffee", setClips);
-    getSearchedGiphys("pose", setStories)
+    getSearchedGiphys("pose", setStories);
   }, []);
 
   return (

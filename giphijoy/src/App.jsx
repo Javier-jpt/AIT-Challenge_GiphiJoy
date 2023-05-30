@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/header/header'
 // import SearchContainer from './components/searchContainer/searchContainer';
-import Media from './components/media/media'
+import Home from './components/home/home'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <div className='main' >
         <Header />
         {/* <SearchContainer /> */}
-        <Media />
+        <Home />
       </div>
     </div>
   );

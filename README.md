@@ -1,1 +1,0 @@
-# AIT-Challenge_GiphiJoy

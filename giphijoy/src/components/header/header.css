@@ -26,21 +26,24 @@
 .menu {
   display: flex;
   flex: 1;
-  justify-content: space-between;
   height: 50px;
   align-items: center;
 }
 
 .button {
-  background-color: #6d63ff;
-  width: 75px;
-  height: 35px;
+  background-color: blueviolet;
+  width: 150px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 3px;
   cursor: pointer;
+  border-radius: 4px;
+  font-size: 50px;
 }
+
+
 
 .profile {
   background-color: gray;
@@ -58,31 +61,24 @@
   height: 35px;
   display: flex;
   align-items: flex-start;
-  margin-right: 10px;
+  margin-right: 50px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .reactions {
   background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
 }
 
-.entertaiment {
+.entertainment {
   background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
 }
 
-.sports {
+.trending {
   background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
 }
 
-.stickers {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.artists {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.moreverticon {
+.home {
   background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
 }
 
@@ -94,27 +90,19 @@
   align-items: center;
 }
 
+.hover-home:hover {
+  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
+}
+
+.hover-entertainment:hover {
+  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
+}
+
 .hover-reactions:hover {
   background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
 }
 
-.hover-entertaiment:hover {
+.hover-trending:hover {
   background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
 }
-
-.hover-sports:hover {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.hover-stickers:hover {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.hover-artists:hover {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.hover-moreverticon:hover {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-} 
 
