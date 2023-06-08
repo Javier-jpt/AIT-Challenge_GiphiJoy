@@ -1,5 +1,6 @@
 import { basePath } from "./config";
 
+
 // Getting info from back !!!
 
 export const getGifsApi = async () => {
@@ -14,13 +15,13 @@ export const getGifsByGenreApi = async ( genre ) => {
     return data;
 }
 
-export const postGifApi = async ( gif ) => {
+export const postGifApi = async ( name, imageUrl, genre ) => {
     const params = {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(gif),
+        body: JSON.stringify({name, imageUrl, genre}),
     }
     const response = await fetch(`${basePath}/gif`, params)
     const data = await response.json()
@@ -28,7 +29,10 @@ export const postGifApi = async ( gif ) => {
 }
 
 export const deleteGifByIdApi = async ( _id ) => {
-    const response = await fetch(`${basePath}/gif/${_id}`)
+    const params = {
+        method: "DELETE"
+    }
+    const response = await fetch(`${basePath}/gif/${_id}`, params)
     const data = await response.json()
     return data;
 }
