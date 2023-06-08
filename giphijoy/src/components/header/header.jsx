@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -8,30 +9,40 @@ const Header = () => {
         <span>GiphyJoy</span>
       </div>
       <div className="menu">
-        <div className="button-wrapper home">
-          <div className="menu-button hover-home">
-            <h2>Home</h2>
+        <Link to="/" style={{ textDecoration:'none'}}>
+          <div className="button-wrapper gradient">
+            <div className="menu-button hover-gradient">
+              <h2>Home</h2>
+            </div>
           </div>
-        </div>
-        <div className="button-wrapper reactions">
-          <div className="menu-button hover-reactions">
-            <h2>Reactions</h2>
+        </Link>
+        <Link to="/reactions" style={{ textDecoration:'none'}}>
+          <div className="button-wrapper gradient">
+            <div className="menu-button hover-gradient">
+              <h2>Reactions</h2>
+            </div>
           </div>
-        </div>
-        <div className="button-wrapper entertainment">
-          <div className="menu-button hover-entertainment">
-            <h2>Entertainment</h2>
+        </Link>
+        <Link to="/entertainment" style={{ textDecoration:'none'}}>
+          <div className="button-wrapper gradient">
+            <div className="menu-button hover-gradient">
+              <h2>Entertainment</h2>
+            </div>
           </div>
-        </div>
-        <div className="button-wrapper trending">
-          <div className="menu-button hover-trending">
-            <h2>Trending</h2>
+        </Link>
+        <Link to="/trending" style={{ textDecoration:'none'}}>
+          <div className="button-wrapper gradient">
+            <div className="menu-button hover-gradient">
+              <h2>Trending</h2>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
-      <div className="button">
-        <h2>Create</h2>
-      </div>
+      <Link to="/upload" style={{ textDecoration:'none'}}>
+        <div className="button">
+          <h2>Create</h2>
+        </div>
+      </Link>
     </div>
   );
 };

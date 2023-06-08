@@ -11,8 +11,8 @@
 .logo-web span {
   color: goldenrod;
   font-size: 70px;
+  user-select: none;
 }
-
 
 .header {
   display: flex;
@@ -43,7 +43,10 @@
   font-size: 50px;
 }
 
-
+h2 {
+  color: black;
+  user-select: none;
+}
 
 .profile {
   background-color: gray;
@@ -66,43 +69,25 @@
   border-radius: 5px;
 }
 
-.reactions {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.entertainment {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.trending {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.home {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(58, 161, 180, 1) 0%,
+    rgba(198, 29, 253, 1) 50%,
+    rgba(252, 69, 69, 1) 100%
+  );
 }
 
 .menu-button {
-  background-color: #121212 ;
+  background: linear-gradient(
+    90deg,
+    rgba(58, 161, 180, 1) 0%,
+    rgba(198, 29, 253, 1) 50%,
+    rgba(252, 69, 69, 1) 100%
+  );
   height: 30px;
   padding: 10px;
   display: flex;
   align-items: center;
+  border-radius: 4px;
 }
-
-.hover-home:hover {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.hover-entertainment:hover {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.hover-reactions:hover {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
-.hover-trending:hover {
-  background: linear-gradient(90deg, rgba(58,161,180,1) 0%, rgba(198,29,253,1) 50%, rgba(252,69,69,1) 100%);
-}
-
