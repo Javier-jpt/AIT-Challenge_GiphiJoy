@@ -1,15 +1,12 @@
 import './App.css';
-import Header from './components/header/header'
-// import SearchContainer from './components/searchContainer/searchContainer';
-import Home from './components/home/home'
+import { Routing } from './router/router';
+
 
 function App() {
   return (
     <div className='app' >
       <div className='main' >
-        <Header />
-        {/* <SearchContainer /> */}
-        <Home />
+        <Routing />
       </div>
     </div>
   );
