@@ -1,29 +1,27 @@
 import React, { useEffect, useState } from "react";
 import GifUsers from "../gifUsers/gifUsers";
 import { getGifsByGenreApi } from "../../api/gif.api";
-import "./gifReactions.css"
+import "./gifTrending.css"
 
-function GifReactions() {
-  
+function GifTrending() {
   const [gifs, setGifs] = useState([]);
   const [haveToReload, setHaveToReload] = useState(false);
 
   useEffect(() => {
-    getGifsByGenreApi("Reaction").then((result) => {
+    getGifsByGenreApi("Trending").then((result) => {
       if ((result.status = 200)) {
         setGifs(result.gifs);
       }
     });
   }, [haveToReload]);
-  console.log(gifs);
 
   return (
-    <div className="reactions-container">
+    <div className="trending-containers">
       {gifs?.map((gif, index) => {
-        return <GifUsers gif={gif} key={index} setHaveToReload={setHaveToReload}/>;
+        return <GifUsers gif={gif} key={index} setHaveToReload={setHaveToReload} />;
       })}
     </div>
   );
 }
 
-export default GifReactions;
+export default GifTrending;

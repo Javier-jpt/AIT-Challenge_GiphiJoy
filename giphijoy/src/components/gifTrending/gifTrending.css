@@ -1,4 +1,4 @@
-.reactions-container {
+.trending-containers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   user-select: none;

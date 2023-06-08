@@ -3,7 +3,29 @@
 }
 
 .users-giphy img {
-  height: 100%;
-  border-radius: 3px;
+  height: 250px;
+  width: 250px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
 }
 
+.users-info {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.users-info span {
+  font-size: 20px;
+}
+
+.users-icons {
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.users-edit {
+  cursor: not-allowed;
+}
