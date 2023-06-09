@@ -15,7 +15,6 @@ function GifReactions() {
       }
     });
   }, [haveToReload]);
-  console.log(gifs);
 
   return (
     <div className="reactions-container">

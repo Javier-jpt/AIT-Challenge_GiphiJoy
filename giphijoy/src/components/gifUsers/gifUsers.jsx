@@ -14,7 +14,7 @@ function GifUsers({ gif, setHaveToReload }) {
 
   return (
     <div className="users-giphy">
-      <img src={gif.imageUrl} alt={gif.name} />
+      <img src={gif.imageUrl} alt={gif.name}/>
       <div className="users-info">
         <span> {gif.name} </span>
         <div className="users-icons">
