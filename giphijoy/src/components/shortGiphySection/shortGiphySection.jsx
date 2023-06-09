@@ -3,7 +3,6 @@ import "./shortGiphySection.css";
 
 const ShortGiphySection = ({ giphysArray }) => {
   const [giphys, setGiphys] = useState([]);
-
   const randomizeData = (giphysArray) => {
     return giphysArray.sort(() => Math.random() - 0.5);
   };
@@ -20,26 +19,26 @@ const ShortGiphySection = ({ giphysArray }) => {
           <div className="first-column">
             <img src={giphys?.[0]?.images.downsized.url} alt="" />
             <div className="text">
-            <img src="/image/giphyIconDark.png" alt="darkLogo" />
-            <p>{giphys?.[0]?.title}</p>
+              <img src="/image/giphyIconDark.png" alt="darkLogo" />
+              <p>{giphys?.[0]?.title}</p>
             </div>
           </div>
           <div className="second-column">
             <img src={giphys?.[1]?.images.downsized.url} alt="" />
             <div className="text">
-            <img src="/image/giphyIconDark.png" alt="darkLogo" />
-            <p>{giphys?.[1]?.title}</p>
+              <img src="/image/giphyIconDark.png" alt="darkLogo" />
+              <p>{giphys?.[1]?.title}</p>
             </div>
             <img src={giphys?.[2]?.images.downsized.url} alt="" />
             <div className="text">
-            <img src="/image/giphyIconDark.png" alt="darkLogo" />
-            <p>{giphys?.[2]?.title}</p>
+              <img src="/image/giphyIconDark.png" alt="darkLogo" />
+              <p>{giphys?.[2]?.title}</p>
             </div>
           </div>
         </>
       ) : null}
     </div>
   );
-}
+};
 
 export default ShortGiphySection;

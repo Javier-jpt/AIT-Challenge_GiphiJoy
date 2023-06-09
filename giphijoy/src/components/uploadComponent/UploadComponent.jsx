@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./uploadComponent.css";
 import { postGifApi } from "../../api/gif.api";
+import toast from 'react-hot-toast';
 
 export const UploadComponent = () => {
 
@@ -15,6 +16,10 @@ export const UploadComponent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     await postGifApi(gifName, gifUrl, gifGenre)
+    setGifGenre("")
+    setGifName("")
+    setGifUrl("")
+    toast.success('Gif ipload correct !!')
    }
 
   return (
@@ -25,7 +30,6 @@ export const UploadComponent = () => {
           id="name"
           name="name"
           type="text"
-          /* value={} */
         />
       </div>
       <div className="form-image">
@@ -34,12 +38,11 @@ export const UploadComponent = () => {
           id="imageUrl"
           name="imageUrl"
           type="text"
-          /* value={} */
         />
       </div>
       <div className="form-genre">
       <select name="genre" className="genre-select" onChange={selectChange}> 
-        <option value=""> --Please choose the Genre--
+        <option value="">    --Please choose the Genre--
         </option>
         <option value="Reactions">Reactions</option>
         <option value="Entertainment">Entertainment</option>

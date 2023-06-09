@@ -2,12 +2,14 @@ import React from "react";
 import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
 import "./gifUsers.css";
 import { deleteGifByIdApi } from "../../api/gif.api";
+import toast from 'react-hot-toast';
 
 function GifUsers({ gif, setHaveToReload }) {
 
   const handleDelete = async (e) => {
     await deleteGifByIdApi(gif._id)
     setHaveToReload(true)
+    toast.error("Gif deleted correctly !!")
   }
 
   return (
